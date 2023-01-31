@@ -34,6 +34,7 @@ h1 {
 h2 {
   font-size: 24px;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 h3 {
@@ -41,18 +42,20 @@ h3 {
   font-weight: 700;
 }
 
+/* TODO: if we continue working with this: clean-up the a tag and button tag styling mess in SCSS */
+
 a {
   color: #080808;
   font-weight: 700;
 }
 
+a:visited {
+  color: #dc849b;
+}
+
 a:hover,
 a:focus {
   text-decoration: none;
-}
-
-a:visited {
-  color: #dc849b;
 }
 
 a:active {
@@ -89,6 +92,11 @@ button:focus,
   color: #080808;
 }
 
+.button__primary:visited {
+  background-color: #6fdcbf;
+  color: #080808;
+}
+
 .button__primary:hover {
   background-color: #b7f7e6;
 }
@@ -102,12 +110,19 @@ button:focus,
   color: #080808;
 }
 
+.button__secondary:visited {
+  background-color: #dc849b;
+  color: #080808;
+}
+
 .button__secondary:hover {
   background-color: #fad2dc;
+  color: #080808;
 }
 
 .button__secondary:focus {
   background-color: #fad2dc;
+  color: #080808;
 }
 
 /* header */
@@ -212,6 +227,7 @@ button:focus,
   height: 100vh;
   margin: 0 auto;
   max-width: 700px;
+  padding: 40px 0;
 }
 
 /* footer */
@@ -227,9 +243,12 @@ button:focus,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 20px;
   padding: 10px;
   text-align: center;
+}
+
+.social-media {
+  margin-top: 10px;
 }
 
 .social-media a:not(:first-of-type) {
@@ -238,17 +257,30 @@ button:focus,
 
 /* home page */
 
+.profile-details {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .profile__portrait {
   border-radius: 50%;
   float: left;
   height: auto;
-  margin-right: 40px;
-  width: 150px;
+  margin-right: 20px;
+  width: 176px;
 }
 
-.profile-details span {
-  background-color: #6fdcbf;
-  padding: 6px;
+.profile-text h1 {
+  margin-top: 0;
+}
+
+.profile-text span {
+  background-color: #b7f7e6;
+  padding: 2px 6px;
 }
 
 /* about page */
@@ -279,12 +311,12 @@ button:focus,
 
 .about-details .button {
   display: inline-block;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
 }
 
 #about-picture {
   display: block;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
   width: 75%;
   height: auto;
 }
@@ -293,8 +325,14 @@ button:focus,
 
 /* grid fallback */
 .grid__item {
+  border-radius: 8px;
   display: inline-block;
   width: 33%;
+}
+
+.work-link {
+  display: inline-block;
+  margin-top: 20px;
 }
 
 /* grid styles if css grid is supported */
@@ -305,11 +343,11 @@ button:focus,
     grid-gap: 20px;
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 0;
+    margin: 10px 0 0 0;
   }
 
   .grid__item {
-    background-color: #6fdcbf;
+    background-color: #b7f7e6;
     margin: 0;
     min-height: auto;
     padding: 10px;
@@ -328,7 +366,8 @@ button:focus,
 /* contact page */
 
 #contact-form {
-  background-color: #6fdcbf;
+  background-color: #b7f7e6;
+  border-radius: 8px;
   margin-top: 20px;
   padding: 10px;
 }
