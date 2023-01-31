@@ -40,9 +40,9 @@ html {
 *,
 ::after,
 ::before {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -352,7 +352,7 @@ button:focus,
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px){
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -379,9 +379,11 @@ button:focus,
   0% {
     fill: var(--sun-medium);
   }
+
   50% {
     fill: var(--sun-light);
   }
+
   100% {
     fill: var(--sun-dark);
   }
@@ -391,6 +393,7 @@ button:focus,
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -400,6 +403,7 @@ button:focus,
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
