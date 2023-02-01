@@ -225,8 +225,8 @@ button:focus,
 
 .main-content {
   margin: 0 auto;
-  max-width: 700px;
-  padding: 40px 0;
+  max-width: 800px;
+  padding: 20px;
 }
 
 .main-content.index {
@@ -246,7 +246,7 @@ button:focus,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -330,16 +330,22 @@ button:focus,
 
 /* work page */
 
-/* grid fallback */
-.grid__item {
-  border-radius: 8px;
-  display: inline-block;
-  width: 33%;
+.main-content.work h1 {
+  font-size: 22px;
 }
 
 .work-link {
   display: inline-block;
   margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* grid fallback - possible TODO: fix this for media queries */
+.grid__item {
+  border-radius: 8px;
+  display: inline-block;
+  width: 100%;
 }
 
 /* grid styles if css grid is supported */
@@ -348,8 +354,8 @@ button:focus,
     display: -ms-grid;
     display: grid;
     grid-gap: 20px;
-    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     margin: 10px 0 0 0;
   }
 
@@ -359,14 +365,6 @@ button:focus,
     min-height: auto;
     padding: 10px;
     width: auto;
-  }
-
-  .grid__item:last-child {
-    -ms-grid-column: 3;
-    grid-column: 3 / 3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1 / 3;
   }
 }
 
@@ -387,37 +385,6 @@ button:focus,
 #contact-form input[type="submit"] {
   font-weight: 700;
   width: auto;
-}
-
-/* media queries (desktop first) */
-
-@media all and (max-width: 500px) {
-  .grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
-  }
-
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
 }
 
 /* keyframes */
@@ -513,18 +480,38 @@ button:focus,
           animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-/* .sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-} */
+/* media queries mobile first */
 
-/* .cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-} */
+@media all and (min-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid__item:last-child {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    -ms-grid-row: 3;
+    grid-row: 3 / 3;
+  }
+}
+
+@media all and (min-width: 750px) {
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grid__item:last-child {
+    -ms-grid-column: 3;
+    grid-column: 3 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+  }
+
+  .main-content.work h1 {
+    font-size: 30px;
+  }
+}
