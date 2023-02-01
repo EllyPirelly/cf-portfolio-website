@@ -254,6 +254,10 @@ button:focus,
   margin-top: 10px;
 }
 
+.social-media a {
+  display: inline-block;
+}
+
 .social-media a:not(:first-of-type) {
   margin-left: 20px;
 }

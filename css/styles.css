@@ -233,6 +233,10 @@ button:focus,
   margin-top: var(--margin-small);
 }
 
+.social-media a {
+  display: inline-block;
+}
+
 .social-media a:not(:first-of-type) {
   margin-left: var(--margin-medium);
 }
