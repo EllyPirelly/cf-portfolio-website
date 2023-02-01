@@ -238,7 +238,6 @@ button:focus,
 .page-footer {
   -webkit-box-shadow: 0 -8px 6px -6px #6fdcbf;
           box-shadow: 0 -8px 6px -6px #6fdcbf;
-  clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,19 +264,20 @@ button:focus,
 /* home page */
 
 .profile-details {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
 .profile__portrait {
   border-radius: 50%;
-  float: left;
   height: auto;
-  margin-right: 20px;
   width: 176px;
 }
 
@@ -483,6 +483,22 @@ button:focus,
 /* media queries mobile first */
 
 @media all and (min-width: 500px) {
+  .profile-details {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    text-align: left;
+  }
+
+  .profile__portrait {
+    margin-right: 20px;
+  }
+
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
