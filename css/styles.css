@@ -222,7 +222,6 @@ button:focus,
 
 .page-footer {
   box-shadow: 0 -8px 6px -6px var(--primary-color);
-  clear: both;
   display: flex;
   flex-direction: column;
   padding: var(--padding-large);
@@ -244,15 +243,15 @@ button:focus,
 /* home page */
 
 .profile-details {
-  align-items: center;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 
 .profile__portrait {
   border-radius: 50%;
-  float: left;
   height: auto;
-  margin-right: var(--margin-medium);
   width: 176px;
 }
 
@@ -403,6 +402,17 @@ button:focus,
 /* media queries mobile first */
 
 @media all and (min-width: 500px) {
+  .profile-details {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+
+  .profile__portrait {
+    margin-right: var(--margin-medium);
+  }
+
   .grid {
     grid-template-columns: 1fr 1fr;
   }
