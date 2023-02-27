@@ -62,7 +62,7 @@ html {
 }
 
 body {
-  background-image: url("/img/svg-dark-background.svg");
+  background-image: url("../img/svg-dark-background.svg");
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--black);
