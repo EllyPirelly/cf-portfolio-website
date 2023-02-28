@@ -25,6 +25,7 @@ This portfolio website was built as a task in [Career Foundry's Full-Stack Web D
   - about page with key information about me as an individual, relevant skills, tools or programming language(s)
   - work page (or section) with work examples, displayed as "cards" in a grid
   - contact page (or section) with `<form>` element, form validation, proper `<label>` and `<input>`, basic contact details
+- must be hosted on GitHub, and here GitHub pages (with dedicated `gh-pages` branch)
 
 ### Languages, Libraries, Frameworks
 
@@ -56,6 +57,8 @@ As there's no npm packages or a build workflow present, it's fairly easy:
 - if on Visual Studio Code, install "Live Server" extension, go to bottom menu and click "Go Live": <br>
   ![Visual Studio Code Screenhot Go Live](img/screenshot-golive.png) <br>
 - this is going to open the website on localhost http://127.0.0.1:5500/
+
+Note to self: possible TODO:
 
 ### Screenshots
 
