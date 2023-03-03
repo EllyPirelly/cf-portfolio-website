@@ -1,10 +1,8 @@
 /* TODO: focus, active, visited states */
-
 :root {
   --black: #080808;
   --black-transparent: rgba(8, 8, 8, 0.5);
   --white: #f3f3f3;
-
   --gray-50: #fafafa;
   --gray-100: #f5f5f5;
   --gray-200: #e5e5e5;
@@ -15,20 +13,16 @@
   --gray-700: #404040;
   --gray-800: #262626;
   --gray-900: #171717;
-
   --primary-color: #6fdcbf;
   --primary-color-light: #b7f7e6;
   --secondary-color: #3a7ca5;
   --secondary-color-transparent: rgba(58, 124, 165, 0.5);
-
   --sun-light: #fcffad;
   --sun-medium: #edc655;
   --sun-dark: #f76414;
-
   --border-radius: 8px;
   --border-radius-md: 16px;
   --border-radius-lg: 24px;
-
   --font-size-base: 16px;
   --font-size-large: 22px;
   --font-size-xl: 24px;
@@ -36,11 +30,9 @@
   --font-size-3xl: 42px;
   --font-size-4xl: 48px;
   --font-weight-bold: 700;
-
   --margin-small: 12px;
   --margin-medium: 18px;
   --margin-large: 24px;
-
   --padding-xsmall: 2px;
   --padding-small: 6px;
   --padding-medium: 10px;
@@ -56,7 +48,7 @@ html {
 *,
 ::after,
 ::before {
-  box-sizing: inherit;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -144,29 +136,38 @@ a:hover {
   font-size: var(--font-size-xl);
 }
 
+/* APP */
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .header,
 .footer {
   background-color: var(--black);
-  color: var(--white);
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 /* HEADER */
-
 .header {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  padding: var(--padding-large);
-  width: 100%;
+  position: sticky;
 }
 
-.header a {
+.header-content-wrapper {
+  align-items: center;
+  color: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: var(--padding-base);
   width: 100%;
 }
 
 /* main navigation */
+.main-navigation {
+  width: 100%;
+}
 
 .main-navigation__list {
   list-style-type: none;
@@ -214,15 +215,14 @@ a:hover {
 }
 
 /* MAIN */
-
 .main-content {
-  margin: 2rem auto;
+  flex: 1;
+  margin: 4rem auto;
   max-width: 800px;
-  padding: 0 var(--padding-large);
+  padding: 0 var(--padding-base);
 }
 
 /* home */
-
 .index-wrapper {
   display: flex;
   flex-direction: column;
@@ -271,7 +271,6 @@ a:hover {
 }
 
 /* about */
-
 .about-wrapper {
   color: var(--white);
 }
@@ -287,7 +286,6 @@ a:hover {
 }
 
 /* svg and animation start */
-
 #about-picture {
   display: block;
   height: auto;
@@ -342,7 +340,6 @@ a:hover {
 }
 
 /* svg and animation end */
-
 .about-list,
 .about-list-items {
   margin-top: var(--margin-small);
@@ -361,7 +358,6 @@ a:hover {
 }
 
 /* work */
-
 .work-grid-items {
   display: grid;
   grid-gap: 20px;
@@ -396,7 +392,6 @@ a:hover {
 }
 
 /* contact */
-
 .contact-wrapper input:not([type="submit"]),
 .contact-wrapper textarea {
   background-color: var(--white);
@@ -431,13 +426,16 @@ a:hover {
 }
 
 /* FOOTER */
-
-.footer {
+.footer-content-wrapper {
   background-color: var(--black);
+  color: var(--white);
   display: flex;
   flex-direction: column;
-  padding: var(--padding-large);
+  padding: var(--padding-base);
   text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
 }
 
 .social-media {
@@ -454,7 +452,6 @@ a:hover {
 }
 
 /* media queries mobile first */
-
 @media all and (min-width: 360px) {
   .headline-superior {
     font-size: var(--font-size-4xl);
@@ -462,10 +459,6 @@ a:hover {
 }
 
 @media all and (min-width: 500px) {
-  .main-content {
-    margin: 4rem auto;
-  }
-
   #about-picture {
     width: 50%;
   }
@@ -491,7 +484,7 @@ a:hover {
   }
 }
 
-@media all and (min-width: 750px) {
+@media all and (min-width: 760px) {
   .header a {
     width: auto;
   }
@@ -507,15 +500,6 @@ a:hover {
 
   .main-navigation__list li:last-child {
     margin-right: 0;
-  }
-
-  /* .main-content {
-    min-height: calc(100vh - 77.59px);
-  } */
-
-  .main-content.about,
-  .main-content.contact {
-    padding: 0;
   }
 
   .index-wrapper {
@@ -559,7 +543,7 @@ a:hover {
     width: auto;
   }
 
-  .footer {
+  .footer-content-wrapper {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
