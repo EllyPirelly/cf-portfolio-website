@@ -2,15 +2,12 @@
 
 ### What is this about?
 
-This portfolio website was built as a task in [Career Foundry's Full-Stack Web Development Program](https://careerfoundry.com/en/courses/become-a-web-developer/), during the "Intro to Frontend Development" section.
+This responsive portfolio website was built as a task in [Career Foundry's Full-Stack Web Development Program](https://careerfoundry.com/en/courses/become-a-web-developer/), during the "Intro to Frontend Development" section. <br>
+It includes information about me and will feature the projects to come during Career Foundry’s Full-Stack Web Development Program.
 
-[Click here to jump to the bottom to see screenshots](#Screenshots)
+![Screenshot of homepage](img/screenshot-homepage.png)
 
-### Provided upfront
-
-- Berlin `<svg>`
-- `index.html`, according to the delivered, annotated HTML template: ![template index](img/template-index-page.jpg)
-- `about.html`, according to the delivered template: ![template about](img/template-about-page.png)
+[Click here to see the website on GitHub pages](https://ellypirelly.github.io/cf-portfolio-website/)
 
 ### Project requirements
 
@@ -33,16 +30,18 @@ This portfolio website was built as a task in [Career Foundry's Full-Stack Web D
 - CSS
 - tota11y
 
-### Sources
+### Provided upfront
 
-- [Markup Validation Service](https://validator.w3.org/)
-- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
-- [tota11y on GitHub, explicitly version 0.1.6](https://github.com/Khan/tota11y/releases/tag/0.1.6)
+- Berlin `<svg>`
+- `index.html`, according to the delivered, annotated HTML template: ![template index](img/template-index-page.jpg)
+- `about.html`, according to the delivered template: ![template about](img/template-about-page.png)
 
 ### Tools, Extensions
 
 - Visual Studio Code
 - GitHub / [Portfolio Website on GitHub Pages](https://ellypirelly.github.io/cf-portfolio-website/)
+- [Markup Validation Service](https://validator.w3.org/)
+- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
 - [tota11y on GitHub, explicitly version 0.1.6](https://github.com/Khan/tota11y/releases/tag/0.1.6), grab zip folder to use the `min.js` that's in the `build` folder
   - during the final assignment I took that script off to not have it present on live GitHub Pages sites
 - [PostCSS CSS Variables](https://madlittlemods.github.io/postcss-css-variables/playground/) to compile CSS Variables to "simple" CSS
@@ -57,9 +56,3 @@ As there's no npm packages or a build workflow present, it's fairly easy:
 - if on Visual Studio Code, install "Live Server" extension, go to bottom menu and click "Go Live": <br>
   ![Visual Studio Code Screenhot Go Live](img/screenshot-golive.png) <br>
 - this is going to open the website on localhost http://127.0.0.1:5500/
-
-Note to self: possible TODO:
-
-### Screenshots
-
-TODO
