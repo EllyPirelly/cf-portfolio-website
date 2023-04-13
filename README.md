@@ -2,7 +2,7 @@
 
 ### What is this about?
 
-This responsive portfolio website was built as a task in [Career Foundry's Full-Stack Web Development Program](https://careerfoundry.com/en/courses/become-a-web-developer/), during the "Intro to Frontend Development" section. <br>
+This responsive portfolio website has been built as a task in [Career Foundry's Full-Stack Web Development Program](https://careerfoundry.com/en/courses/become-a-web-developer/), during the "Intro to Frontend Development" section. <br>
 It includes information about me and will feature the projects to come during Career Foundry’s Full-Stack Web Development Program.
 
 ![Screenshot of homepage](img/screenshot-homepage.png)
@@ -44,12 +44,12 @@ It includes information about me and will feature the projects to come during Ca
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
 - [tota11y on GitHub, explicitly version 0.1.6](https://github.com/Khan/tota11y/releases/tag/0.1.6), grab zip folder to use the `min.js` that's in the `build` folder
   - during the final assignment I took that script off to not have it present on live GitHub Pages sites
-- [PostCSS CSS Variables](https://madlittlemods.github.io/postcss-css-variables/playground/) to compile CSS Variables to "simple" CSS
+- [PostCSS CSS Variables Playground](https://madlittlemods.github.io/postcss-css-variables/playground/) to compile CSS Variables to "simple" CSS
 - [Autoprefixer](http://autoprefixer.github.io/) to set the exact browser versions to support and add all needed prefixes
 
 ### How to run this?
 
-As there's no npm packages or a build workflow present, it's fairly easy:
+No build workflow.
 
 - clone the repo
 - `cd` into project
