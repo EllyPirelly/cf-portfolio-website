@@ -40,6 +40,7 @@ It includes information about me and will feature the projects to come during Ca
 
 - Visual Studio Code
 - GitHub / [Portfolio Website on GitHub Pages](https://ellypirelly.github.io/cf-portfolio-website/)
+- [Visual Studio Code Extension "Live Server"](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - [Markup Validation Service](https://validator.w3.org/)
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
 - [tota11y on GitHub, explicitly version 0.1.6](https://github.com/Khan/tota11y/releases/tag/0.1.6), grab zip folder to use the `min.js` that's in the `build` folder
