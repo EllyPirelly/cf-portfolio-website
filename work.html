@@ -14,7 +14,7 @@
       rel="stylesheet">
     <link rel="stylesheet" type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css">
   </head>
 
   <body>
@@ -50,73 +50,79 @@
       </header>
 
       <main class="main-content work">
-        <h1 class="headline-primary">My most recent work on CodePen</h1>
+        <h1 class="headline-primary">Most recent work</h1>
 
         <div class="work-grid-items">
           <div class="work-grid-item">
-            <h3 class="headline-tertiary">HTML and SCSS - Responsive overlay on background image</h3>
-            <p class="text-content">
-              Try-out of an overlay in 3 versions: CSS clip-path, CSS transform with skew and translate and CSS
-              gradient.
-              Requirements where to easily (!) also apply a (box)shadow.
-            </p>
-            <a href="https://codepen.io/ellypirelly/pen/eYMaPOa?editors=1100" target="_blank"
-              rel="noopener noreferrer">Click to get to responsive
-              overlay on background image</a>
+            <div class="work-example">
+              <img class="work-img" src="./img/work-moviepool-small.png" alt="">
+              <h3 class="headline-tertiary">MoviePool App</h3>
+              <p class="text-content">
+                A responsive Single Page Application for movie lovers that want to be able to access information about
+                movies and, once signed up, manage their favorite movies. It's the frontend to the Movie API.
+              </p>
+            </div>
+
+            <div class="work-code">
+              <a href="https://movie-pool-app.netlify.app/signup" class="work-link" target="_blank"
+                rel="noopener noreferrer">Demo</a>
+              <a href="https://github.com/EllyPirelly/cf-movie-client" class="work-link" target="_blank"
+                rel="noopener noreferrer">Code</a>
+            </div>
           </div>
 
           <div class="work-grid-item">
-            <h3 class="headline-tertiary">HTML and CSS - element with appearing shadow when scolling left/right</h3>
-            <p class="text-content">
-              Given was an HTML table element. Requirements: apply a box-shadow that only appears when the user scrolls
-              left/right ("dynamic").
-            </p>
-            <a href="https://codepen.io/ellypirelly/pen/vYWmJaN?editors=1100" target="_blank"
-              rel="noopener noreferrer">Click to get to element with
-              appearing shadow when scolling left/right</a>
+            <div class="work-example">
+              <img class="work-img" src="./img/work-movieapi-small.png" alt="">
+              <h3 class="headline-tertiary">Movie API</h3>
+              <p class="text-content">
+                A RESTful API that serves as the backend for the MoviePool App. The very simple database was also built
+                by
+                me and is hosted on MongoDB Atlas.
+              </p>
+            </div>
+            <div class="work-code">
+              <a href="https://github.com/EllyPirelly/cf-movie-api" class="work-link" target="_blank"
+                rel="noopener noreferrer">Demo</a>
+            </div>
           </div>
 
           <div class="work-grid-item">
-            <h3 class="headline-tertiary">HTML and CSS - em versus rem</h3>
-
-            <p class="text-content">
-              What happens to sizes in nested HTML elements while using em versus using rem.
-            </p>
-            <a href="https://codepen.io/ellypirelly/pen/yLEwXNO" target="_blank" rel="noopener noreferrer">HTML and CSS:
-              em versus rem</a>
+            <div class="work-example">
+              <img class="work-img" src="./img/work-pokemon-small.png" alt="">
+              <h3 class="headline-tertiary">Pokémon Checker</h3>
+              <p class="text-content">
+                A small, responsive web application that fetches data from an external PokéAPI, displaying Pokémon names
+                as a list and Pokémon details via a modal.
+              </p>
+            </div>
+            <div class="work-code">
+              <a href="https://ellypirelly.github.io/cf-pokedex-app/" class="work-link" target="_blank"
+                rel="noopener noreferrer">Demo</a>
+              <a href="https://github.com/EllyPirelly/cf-pokedex-app" class="work-link" target="_blank"
+                rel="noopener noreferrer">Code</a>
+            </div>
           </div>
 
           <div class="work-grid-item">
-            <h3 class="headline-tertiary">HTML and SCSS - toggle box (checkbox)</h3>
-
-            <p class="text-content">
-              A super simple toggle box that changes color AND text when toggling. Checkbox hack.
-            </p>
-            <a href="https://codepen.io/ellypirelly/pen/YzpYRdv?editors=1100" target="_blank"
-              rel="noopener noreferrer">Click to get to toggle box
-            </a>
-          </div>
-
-          <div class="work-grid-item">
-            <h3 class="headline-tertiary">HTML, CSS, JavaScript - scrollable horizontal nav, vertical smooth scroll</h3>
-            <p class="text-content">
-              Smooth scroll on click to sectiont. Horizontal scrollable nav, to see this working resize window.
-            </p>
-            <a href="https://codepen.io/ellypirelly/pen/PoaRWvP" target="_blank" rel="noopener noreferrer">Click to get
-              to
-              scrollable nav and
-              vertical smooth scroll</a>
+            <div class="work-example">
+              <img class="work-img" src="./img/work-meet-reduced-small.png" alt="">
+              <h3 class="headline-tertiary">Meet App</h3>
+              <p class="text-content">
+                Serverless PWA in React, using a TDD approach. The application has implemented authentication and
+                authorization and uses the Google Calendar API. This app is currently not verified so one can only see
+                its content if added to test users in Google by
+                me.
+              </p>
+            </div>
+            <div class="work-code">
+              <a href="https://ellypirelly.github.io/cf-meet/" class="work-link" target="_blank"
+                rel="noopener noreferrer">Demo</a>
+              <a href="https://github.com/EllyPirelly/cf-meet" class="work-link" target="_blank"
+                rel="noopener noreferrer">Code</a>
+            </div>
           </div>
         </div>
-
-        <div class="work-link-wrapper">
-          <a href="https://codepen.io/ellypirelly" class="work-link button button__primary" target="_blank"
-            rel="noopener noreferrer">There's more on my CodePen page</a>
-
-          <a href="https://github.com/EllyPirelly" class="work-link button button__primary" target="_blank"
-            rel="noopener noreferrer">Find more code in my GitHub repo</a>
-        </div>
-
       </main>
 
       <footer class="footer">

@@ -3,7 +3,7 @@
 ### What is this about?
 
 This responsive portfolio website has been built as a task in [Career Foundry's Full-Stack Web Development Program](https://careerfoundry.com/en/courses/become-a-web-developer/), during the "Intro to Frontend Development" section. <br>
-It includes information about me and will feature the projects to come during Career Foundry’s Full-Stack Web Development Program.
+It includes information about me and has mini features of the projects I've built during Career Foundry’s Full-Stack Web Development Program.
 
 ![Screenshot of homepage](img/screenshot-homepage.png)
 
@@ -22,7 +22,7 @@ It includes information about me and will feature the projects to come during Ca
   - about page with key information about me as an individual, relevant skills, tools or programming language(s)
   - work page (or section) with work examples, displayed as "cards" in a grid
   - contact page (or section) with `<form>` element, form validation, proper `<label>` and `<input>`, basic contact details
-- must be hosted on GitHub, and here GitHub pages (with dedicated `gh-pages` branch)
+- must be hosted on GitHub pages (within dedicated `gh-pages` branch, I've changed that to `main` after passing the task)
 
 ### Languages, Libraries, Frameworks
 

@@ -15,6 +15,7 @@
   --gray-900: #171717;
   --primary-color: #6fdcbf;
   --primary-color-light: #b7f7e6;
+  --primary-color-superlight: #d4fff4;
   --secondary-color: #3a7ca5;
   --secondary-color-transparent: rgba(58, 124, 165, 0.5);
   --sun-light: #fcffad;
@@ -61,7 +62,11 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.2;
+}
+
+img {
+  width: 100%
 }
 
 a {
@@ -90,9 +95,13 @@ a:hover {
 }
 
 .button__primary:hover {
-  background-color: var(--primary-color-light);
+  background-color: var(--primary-color-superlight);
   color: var(--black);
   cursor: pointer;
+}
+
+.button__primary:active {
+  box-shadow: inset 0 0.25rem 0.25rem rgb(8 8 8 / 0.5);
 }
 
 .button__secondary {
@@ -181,6 +190,7 @@ a:hover {
 .main-navigation__list-item {
   color: var(--white);
   position: relative;
+  line-height: 1.6;
 }
 
 .main-navigation__list-item--active {
@@ -370,9 +380,12 @@ a:hover {
   border: 1px solid var(--secondary-color);
   border-radius: var(--border-radius);
   color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0;
   min-height: auto;
-  padding: var(--padding-large);
+  padding: var(--padding-base);
   width: auto;
 }
 
@@ -381,14 +394,26 @@ a:hover {
   border: 1px solid var(--white);
 }
 
-.work-grid-item a:hover {
-  color: var(--white);
+.work-img {
+  margin-bottom: var(--margin-small);
 }
 
 .work-link {
+  display: inline-block;
   margin-top: var(--margin-large);
-  text-align: center;
-  width: 100%;
+}
+
+.work-link:first-of-type {
+  margin-right: .5rem;
+}
+
+.work-link:hover {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.work-button-wrapper {
+  margin-top: 1rem;
 }
 
 /* contact */
@@ -477,11 +502,6 @@ a:hover {
   .work-grid-items {
     grid-template-columns: 1fr 1fr;
   }
-
-  .work-grid-item:last-child {
-    grid-column: 1 / 3;
-    grid-row: 3 / 3;
-  }
 }
 
 @media all and (min-width: 760px) {
@@ -522,21 +542,6 @@ a:hover {
     justify-content: flex-start;
     padding: var(--padding-xlarge) var(--padding-large);
     width: 65%;
-  }
-
-  .work-grid-items {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .work-grid-item:last-child {
-    grid-column: 3 / 3;
-    grid-row: 1 / 3;
-  }
-
-  .work-link-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .work-link {

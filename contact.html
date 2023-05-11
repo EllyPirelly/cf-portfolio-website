@@ -14,7 +14,7 @@
       rel="stylesheet">
     <link rel="stylesheet" type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css">
   </head>
 
   <body>
@@ -54,10 +54,12 @@
           <div class="contact-details">
             <h1 class="headline-primary">Contact</h1>
 
-            <p>My contact details:</p>
-            <p>Elle Hanschen</p>
-            <p>Email: <a href="mailto:name.lastname@emailprovider.com">name.lastname@emailprovider.com</a></p>
-            <p>Phone: <a href="tel:+4912345678" aria-label="telephone number">+49 1234 5678</a></p>
+            <p class="text-content">Email: <br> <a
+                href="mailto:name.lastname@emailprovider.com">name.lastname@provider.com</a></p>
+
+            <p class="text-content">Heads Up: The contact form is not working, the HTML you see here has been a part of
+              the exercise of developing this site.
+            </p>
 
             <form action="get" method="post" id="contact-form">
 
@@ -77,8 +79,6 @@
 
               <label class="standard-label" for="contact-message">Your message</label>
               <textarea name="message" id="contact-message" cols="60" rows="10" maxlength="240" required></textarea>
-
-              <p>The contact form is not working (yet).</p>
 
               <input type="submit" value="Click to send message" class="button button__secondary">
             </form>
