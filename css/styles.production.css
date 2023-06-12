@@ -44,6 +44,11 @@ a:hover {
   text-decoration: none;
 }
 
+a:hover.social-media--bsky {
+  background-color: #3a7ca5;
+  text-decoration: none;
+}
+
 .button {
   border: none;
   border-radius: 8px;
@@ -536,12 +541,41 @@ a:hover {
 }
 
 .social-media {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 12px;
   margin-top: 12px;
 }
 
 .social-media a {
   display: inline-block;
   line-height: 1;
+}
+
+a.social-media--bsky {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 2px;
+  color: #080808;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 26px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 4px;
+  text-decoration: none;
+  width: auto;
 }
 
 .social-media a:not(:first-of-type) {
@@ -662,6 +696,7 @@ a:hover {
   }
 
   .social-media {
+    margin-bottom: 0;
     margin-top: 0;
   }
 
